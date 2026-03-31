@@ -6,7 +6,7 @@ import seaborn as sns
 df = pd.read_csv('List of Countries by Sugarcane Production.csv')
 
 print(df.head())
-print(df.shape)
+print(df.shape) 
 print(df.info())
 
 # Data Cleaning
