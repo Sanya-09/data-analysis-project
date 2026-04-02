@@ -8,3 +8,4 @@ print(df.dropna())
 del df['Product_Category_2']
 del df['Product_Category_3']
 print(df)
+ 
