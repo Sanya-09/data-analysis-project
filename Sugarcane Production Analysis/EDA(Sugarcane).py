@@ -7,14 +7,14 @@ df = pd.read_csv('List of Countries by Sugarcane Production.csv')
 
 print(df.head())
 print(df.shape) 
-print(df.info())
+print(df.info()) 
 
 # Data Cleaning
 df['Production(Tons)'] = df['Production(Tons)'].str.replace(',', '')
 df["Production per Person (Kg)"] = df["Production per Person (Kg)"].str.replace(".","").str.replace(",",".")
 df["Acreage (Hectare)"] = df["Acreage (Hectare)"].str.replace(".","")
 df["Yield (Kg / Hectare)"]= df["Yield (Kg / Hectare)"].str.replace(".","").str.replace(",",".")
-
+ 
 df = df.drop( "Unnamed: 0", axis = 1)
 
 df.rename(columns= {"Production (Tons)": "Production(Tons)"}, inplace = True)
@@ -36,7 +36,7 @@ df["Acreage(Hectare)"] = df["Acreage(Hectare)"].astype(float)
 df["Yield(Kg/Hectare)"] = df["Yield(Kg/Hectare)"].astype(float)
 print(df.dtypes)
 
-# Univariate Analysis
+# Univariate Analysis 
 df.head()
 
 #How many countries produce sugarcane from each continent?
