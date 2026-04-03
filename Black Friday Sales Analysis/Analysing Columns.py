@@ -8,7 +8,7 @@ del df['Product_Category_3']
 print(df.head())
 
 df['User_ID'].nunique()
-
+ 
 df['Product_ID'].nunique()
 
 df['Gender'].unique()
