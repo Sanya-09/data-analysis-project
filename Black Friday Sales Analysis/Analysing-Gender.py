@@ -4,7 +4,7 @@ df = pd.read_csv('BlackFriday.csv')
 del df['Product_Category_2']
 del df['Product_Category_3']
 
-df.head()
+df.head() 
 
 for column in df.columns:
     print(df[column].nunique(), "\t: ", column)
