@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+ 
 # Load the sugarcane dataset
 df = pd.read_csv('List of Countries by Sugarcane Production.csv')
 
