@@ -8,7 +8,7 @@ df = pd.read_csv('List of Countries by Sugarcane Production.csv')
 print(df.head())
 print(df.shape) 
 print(df.info()) 
-
+  
 # Data Cleaning
 df['Production(Tons)'] = df['Production(Tons)'].str.replace(',', '')
 df["Production per Person (Kg)"] = df["Production per Person (Kg)"].str.replace(".","").str.replace(",",".")
