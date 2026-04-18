@@ -8,7 +8,7 @@ df.head()
 
 for column in df.columns:
     print(df[column].nunique(), "\t: ", column)
-
+ 
 data = pd.DataFrame({'Ratio' : [len(df[df['Gender'] == 'M']), len(df[df['Gender'] == 'F'])]}, 
                     index = ['Male', 'Female'])
 
