@@ -7,7 +7,7 @@ df = pd.read_csv('List of Countries by Sugarcane Production.csv')
 
 print(df.head())
 print(df.shape) 
-print(df.info()) 
+print(df.info())  
   
 # Data Cleaning
 df['Production(Tons)'] = df['Production(Tons)'].str.replace(',', '')
