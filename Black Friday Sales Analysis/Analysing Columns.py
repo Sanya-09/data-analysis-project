@@ -4,7 +4,7 @@ df = pd.read_csv('BlackFriday.csv')
 
 del df['Product_Category_2']
 del df['Product_Category_3']
-
+ 
 print(df.head()) 
 
 df['User_ID'].nunique()
